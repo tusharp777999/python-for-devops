@@ -1,0 +1,48 @@
+Virtual Environment:
+-To understand this we need to think about one scenario
+-Scenario is that we have two projects like Project_01 and Project_02 and in Project_01 we have used the "psutil" library and for Project_02 we used "requests"
+library but Project_01 does not need "requests" library and Project_02 does not need "psutil" library. But we are unecessarily installing the libraries in the whole
+system. Instead of this simply what we can do, we will create a Virtual Environment this supports the project specific libraries will be downloaded for that project only not for others.
+
+Conflict of version:
+-When we have 2 versions of Python like Python3.13 and Python 3.14 which is installed in our system and we have 2 projects like Project_01 and Project_02.
+Project_01 needs Python version Python3.13 and Project_02 needs Python version Python3.14 but our system have both of them. The projects will get confused
+which one it has to used to run the these projects.
+
+To create a Virtual Environment we need to use the following command:
+>python3.14 -m venv venv
+
+So here we are creating the Virtual Environment using above command but we need to know meaning of each parameter.
+python3.14: It means using this python version we are going to create the Virtual Environment.
+-m: It means module. To run the module as a script we use this option in the command.
+venv: It is a standard python module which is used to create a Virtual Environment and to run this module we are using "-m" option in command.
+venv: This last attribute in command we put the same name as the module name (You can take any name) and it will create a folder with that name. This folder having all thing related to the
+Virtual Environment.
+
+What things inside the venv folder?
+-python and pip executables.(bin/ or scripts)
+-installed packages.(lib/)
+-config file.(pyenv.cfg)
+-headers.(include/)
+
+To activate Virtual Environment we need to use following command.
+source venv/bin/activate
+
+To deactivate Virtual Environment we need to use following command.
+deactivate
+
+This will activate the Virtual Environment. Here we are going to know the meaning of each attribute.
+source: It is shell built-in command used to run the commands inside the file.
+activate: It is shell script provided by the Virtual Environment.
+
+How will you confirm our Virtual Environment is created, activated and deactivated?
+-To check wether our Virtual Environment created or not you have to check the evn file in our project.
+-To check it is activated or not you need to check the command prompt or terminal at the starting of it shows the (env).
+-To deactivated you should be in activated mode like it should show (env) then just type "deactivate"
+
+In Virtual Environment you dont need to use command with version like:
+>python3.13
+>python3.14
+As we are mentioning the version explicitly. Instead of we can able to use the "python" as a command directly within the Virtual Environment because we only
+have single version of python inside the Virtual Environment.
+>python

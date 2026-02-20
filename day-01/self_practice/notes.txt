@@ -1,0 +1,21 @@
+!! Shree Ganeshay Namaha !!
+
+1.Which extension is used for python file?
+-> .py
+
+2.Which command is used to run python file?
+-> Syntax: python3.14 filename.extension 
+   Example: python3.14 program01.py
+
+3.For single comment purpose what should we use in python?
+-> # is used for comment.
+
+4.What is interpreter?
+-> It executes the program line by line from top to down approach and checks the syntax understand it and convert it into machine language form i.e binary Ex: 010101
+   Python uses the C programming language in the background.
+
+5.Python is Programming Language or Scripting Language?
+-> Python comes in both categories.
+
+6.What is Programming Language and Scripting Language?
+-> Programming Language means it is code which is use to create an application and it is self sufficient to do the task whereas Scripting Language means it is not a code it is a set of instructions.
